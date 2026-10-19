@@ -13,7 +13,7 @@ import os
 import dj_database_url
 from dotenv import load_dotenv
 from pathlib import Path
-from decouple import config
+from decouple import config, Csv
 
 load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -28,7 +28,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='').split(',')
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='.vercel.app,localhost,127.0.0.1', cast=Csv())
 
 
 # Application definition
