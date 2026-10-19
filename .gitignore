@@ -1,0 +1,46 @@
+# Environment
+.env
+.env.*
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Django
+db.sqlite3
+*.log
+media/
+staticfiles/
+static_root/
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+*.bak
+test_db.py
